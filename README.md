@@ -1,6 +1,10 @@
 # wx-mini-icon
-微信小程序自定义svg图标组件
+微信小程序自定义svg图标组件，可更改svg的颜色，大小
 > ## 注意:该项目不包含任何svg图标文件，svg图标需自行下载
+## 预览
+> 此处使用的图标是开源项目[tabler-icons](https://github.com/tabler/tabler-icons)中的svg
+
+![preview](./preview-img/Capture.PNG)
 ## 下载
 直接下载src文件夹到项目中或者pull到本地
 ## 组件配置
@@ -21,11 +25,13 @@
   }
 }
 ```
-组件注册完成后在页面中使用标签即可
+组件注册完成后在页面中直接使用标签
 ```html
   <mini-icon type="settings" color="#fff" size"1em"></mini-icon>
 ```
 ### 标签属性
+> 属性type的值不能为空，应为所需svg文件名，如使用"hello.svg"，在标签中type属性应设置为`type ="hello"`
+
 |属性名|接受类型|是否可为空|
 |---|---|---|
 |type|String|否|
