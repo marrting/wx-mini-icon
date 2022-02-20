@@ -1,0 +1,3 @@
+<!-- mini-icon.wxml -->
+<view class="icon" style="background-image:{{src}};height:{{size}}; width:{{size}};">
+</view>

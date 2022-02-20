@@ -1,0 +1,4 @@
+/*mini-icon.wxss*/
+.icon{
+  background-size: cover;
+}
