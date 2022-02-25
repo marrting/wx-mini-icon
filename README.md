@@ -1,5 +1,5 @@
-# wx-mini-icon
-微信小程序自定义svg图标组件，可更改svg的颜色，大小
+# wx-mini-icon ![license](https://img.shields.io/badge/license-MIT-blue) ![version](https://img.shields.io/badge/version-1.0.0-brightgreen)
+微信小程序自定义svg图标组件，可更改svg的颜色和大小
 > ## 注意:该项目不包含任何svg图标文件，svg图标需自行下载
 ## 预览
 > 此处使用的图标是开源项目[tabler-icons](https://github.com/tabler/tabler-icons)中的svg
