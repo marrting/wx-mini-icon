@@ -1,13 +1,19 @@
 Component({
   properties: {
-    size:String,
-    color:String,
+    //若color和size属性不设置，默认设置颜色和大小
+    size:{
+      type:String,
+      value:"1em"
+    },
+    color:{
+      type:String,
+      value:"#555"
+    },
     type:String,
   },
   data: {
     path:"assets/icons/",//配置项目中svg的图标所在路径，如"path/to/icons/"
     src:"",
-    reg:""
   },
   methods: {
     // 将svg转为url格式
@@ -26,17 +32,6 @@ Component({
   },
   lifetimes:{
     attached:function(){
-      //若color和size属性不设置，默认设置颜色和大小
-      if(this.data.color==""){
-        this.setData({
-          color:"#ccc"
-        })
-      }
-      if(this.data.size==""){
-        this.setData({
-          size:"1em"
-        })
-      }
       //读取svg所在路径
       const fs = wx.getFileSystemManager()
       let res = fs.readFileSync(this.data.path+this.data.type+'.svg','ascii')
